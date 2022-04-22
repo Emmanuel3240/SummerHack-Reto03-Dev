@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clon de Google</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link
-      rel="shortcut icon"
-      href="assets/images/unnamed.png"
-      type="image/x-icon"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/cfdfb90384.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="box">
       <nav>
-        <ul class="nav-right-section">
+        <ul class="nav-menu">
           <li>
             <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl"
               >Gmail</a
@@ -31,10 +30,10 @@
               >Imágenes</a
             >
           </li>
-          <li>
-            <a href=""><span class="icon-puntitos"></span></a>
+          <li class="iconos">
+            <a href=""><span class="material-symbols-outlined"> apps </span></a>
           </li>
-          <li>
+          <li class="iconos">
             <a href="">
               <img
                 src="https://lh3.googleusercontent.com/ogw/ADea4I5f9nOPdQ62Dc0LouFx3waoDYNtFjM9Vo7ZXXqIs0o=s32-c-mo"
@@ -45,29 +44,33 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="main-logo">
-        <img
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-          alt=""
-        />
-      </section>
-      <section class="main-input">
-        <div class="main-input-container">
-          <span class="icon search-icon"></span>
-          <input type="text" id="searchValue" />
-          <button type="button" class="icon microphone-icon"></button>
-        </div>
-      </section>
-      <section class="main-buttons">
+    <section>
+      <div class="google box">
         <div>
-          <button type="button">Buscar con Google</button>
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt=""
+          />
         </div>
-        <div>
-          <button type="button">Me siento con suerte</button>
+      </div>
+      <div class="search box">
+        <div class="input">
+          <div class="input-container">
+            <span class="material-icons"> search </span>
+            <input type="text" id="searchValue" />
+            <button type="button" class="icon microphone-icon"></button>
+          </div>
         </div>
-      </section>
-      <section class="main-message">
+        <div class="buttons box">
+          <div>
+            <button type="submit">Buscar con Google</button>
+          </div>
+          <div>
+            <button type="submit">Me siento con suerte</button>
+          </div>
+        </div>
+      </div>
+      <div class="message box">
         <div>
           <p>
             Ofrecido por Google en:
@@ -81,61 +84,64 @@
             >
           </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <footer>
-      <ul class="footer-left">
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQkNQCCBk&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-AR%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1ga7btx-q5sYcd7hBEywn8"
-          >
-            Sobre Google
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQkdQCCBc&url=https%3A%2F%2Fwww.google.com.sv%2Fintl%2Fes_ar%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2bk4lkWqthdyorudVCh8uI"
-          >
-            Publicidad
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQktQCCBg&url=https%3A%2F%2Fwww.google.com.sv%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3mnU3yELvolYOvydRNQWem"
-          >
-            Negocios
-          </a>
-        </li>
+      <div class="footer1 box">Argentina</div>
+      <div class="footer2 box">
+        <ul class="footer-left">
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQkNQCCBk&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-AR%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1ga7btx-q5sYcd7hBEywn8"
+            >
+              Sobre Google
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQkdQCCBc&url=https%3A%2F%2Fwww.google.com.sv%2Fintl%2Fes_ar%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2bk4lkWqthdyorudVCh8uI"
+            >
+              Publicidad
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQktQCCBg&url=https%3A%2F%2Fwww.google.com.sv%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3mnU3yELvolYOvydRNQWem"
+            >
+              Negocios
+            </a>
+          </li>
 
-        <li>
-          <a href="https://google.com/search/howsearchworks/?fg=1">
-            Cómo funciona la Búsqueda
-          </a>
-        </li>
-      </ul>
-      <ul class="footer-right">
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri"
-          >
-            Privacidad
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n"
-          >
-            Condiciones
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQzq0CCBU&url=https%3A%2F%2Fwww.google.com.sv%2Fpreferences%3Fhl%3Des&usg=AOvVaw2lcC3WvLlcZqXoZwF8vF5D"
-          >
-            Preferencias
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a href="https://google.com/search/howsearchworks/?fg=1">
+              Cómo funciona la Búsqueda
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-right">
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri"
+            >
+              Privacidad
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n"
+            >
+              Condiciones
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com.sv/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiNy4mc87vqAhUrF7kGHdZwAYEQzq0CCBU&url=https%3A%2F%2Fwww.google.com.sv%2Fpreferences%3Fhl%3Des&usg=AOvVaw2lcC3WvLlcZqXoZwF8vF5D"
+            >
+              Preferencias
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
